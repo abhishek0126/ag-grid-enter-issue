@@ -1,0 +1,30 @@
+{
+    "data": [
+      {
+        "bookingPartyCode": "a",
+        "bookingPartyName": "Abhi"
+      },
+      {
+        "bookingPartyCode": "b",
+        "bookingPartyName": "Bhav"
+      },
+      {
+        "bookingPartyCode": "c",
+        "bookingPartyName": "Cind"
+      },
+      {
+        "bookingPartyCode": "d",
+        "bookingPartyName": "Dolp"
+      },
+      {
+        "bookingPartyCode": "e",
+        "bookingPartyName": "Ele"
+      },
+      {
+        "bookingPartyCode": "f",
+        "bookingPartyName": "Far"
+      }
+    ],
+    "success": true,
+    "message": "success"
+  }

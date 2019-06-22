@@ -1,0 +1,22 @@
+<!-- <mat-card>
+    <div class="container" #group tabindex="0" (keydown)="onKeyDown($event)">
+        <mat-form-field style="height: 100%;">
+            <input matInput [matAutocomplete]="auto" [formControl]="valueCtrl">
+            <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let v of filteredValues | async" [value]="v">
+                    {{ v }}
+                </mat-option>
+        </mat-autocomplete>
+        </mat-form-field>
+    </div>
+</mat-card> -->
+
+
+<input #input type="text" class="textMat ie-height-fix" matInput [(ngModel)]="selectedValue" [matAutocomplete]="auto"
+[formControl]="bkPartyControl"
+(blur)="validateValue(selectedValue)" (focus)="inputFocus()" [class.disable-text-color]='isEditable'>
+<mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" [panelWidth]="'fit-content'">
+<mat-option *ngFor="let options of bkPartyList" [value]="options.bookingPartyName" (onSelectionChange)="onSelectionChange(options)">
+  {{options.bookingPartyName}} - {{options.bookingPartyCode}}
+</mat-option>
+</mat-autocomplete>
